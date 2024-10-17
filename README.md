@@ -37,6 +37,10 @@ This repository focuses on testing the modality of each data pair from the causa
 
 3. **Bidirectional Testing**:
    - Perform testing in both directions: X → Y and Y → X
+     
+#### General Guidelines
+   - Dip Statistic < 0.02 with p-value > 0.05: Likely unimodal.
+   - Dip Statistic > 0.02 with p-value < 0.05: Likely multimodal.
 
 
 
