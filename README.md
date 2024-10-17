@@ -8,7 +8,7 @@ This repository focuses on testing the modality of each data pair from the causa
 1. **Modality Testing**:
    - Test the modality of the distribution for each pair in both directions (X → Y and Y → X)
    - Modality refers to the number of peaks in the probability distribution.
-   - We want to identify whether the data shows **unimodal** or **multimodal**.
+   - We want to identify whether the data distribution is **unimodal** or **multimodal**.
 
 2. **Identification of New Multimodal Causal Pairs**:
    - Example: Investigate the causal relationship between weight and BMI, across different populations such as men and women.
