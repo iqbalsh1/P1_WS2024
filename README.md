@@ -18,7 +18,8 @@ This repository focuses on testing the modality of each data pair from the causa
 ### 1. Data Preparation
 - Download the dataset of causal pairs.
 - Load datasets for analysis.
-- Each data pair consists of two variables (X, Y), and both directions (X → Y and Y → X) will be analyzed.
+- Each data pair consists of two variables (X, Y)
+- both directions (X → Y and Y → X) will be analyzed.
 
 ### 2. Modality Testing
 - For each causal pair, analyze the distribution in both directions:
