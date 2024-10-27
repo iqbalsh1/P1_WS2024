@@ -2,6 +2,11 @@
 
 This repository focuses on testing the modality of each data pair from the causal effect database and indetifying the causal pair are **unimodal or multimodal**. The dataset can be found [here](https://webdav.tuebingen.mpg.de/cause-effect/).
 
+### Ground Truth Causal Pairs
+
+- **Ground Truth X → Y Pairs:** pair0001 to pair0046 
+- **Ground Truth Y → X Pairs:** pair0047 to pair0050 
+
 ## Project Overview
 
 ### Objectives:
