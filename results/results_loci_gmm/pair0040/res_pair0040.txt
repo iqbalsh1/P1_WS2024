@@ -1,0 +1,4 @@
+Results Summary:
+Clusters causal inference results: ['X → Y', 'Y → X']
+Inferred Causal Direction: Undecided
+Ground Truth: X → Y
