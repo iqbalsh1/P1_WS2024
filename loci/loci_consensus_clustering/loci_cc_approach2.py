@@ -2,25 +2,21 @@ import sys
 sys.path.append(r'C:\Users\User\Desktop\P1_WS2024\P1_WS2024_1.2\loci\causa\experiment\Consensus_Clustering')
 import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt
-from sklearn.cluster import KMeans
-from sklearn.metrics import silhouette_score
-from causa.loci import loci  
 import os
-# importing consensus clustering module
+from sklearn.cluster import KMeans
+from causa.loci import loci
 from consensusClustering import ConsensusCluster
 
-file_path = "data/datapairs/pair0107.txt"
+file_path = "data/datapairs/pair0005.txt"
 res_folder = "results/results_loci_cc"
 
+# Create results folder if it doesn't exist
 def create_results_folder(folder_path):
-
     if not os.path.exists(folder_path):
         os.makedirs(folder_path)
 
-# Step 2: Load the dataset
+# Load the dataset
 def load_data(file_path):
-   
     try:
         data = pd.read_csv(file_path, sep=r'\s+', header=None, names=['X', 'Y'])
         print("Data loaded successfully!")
@@ -29,41 +25,31 @@ def load_data(file_path):
         print(f"Error loading data: {e}")
         exit()
 
-# Step 3: Find the optimal number of clusters using silhouette score
-def find_optimal_clusters(data, max_clusters=4):
-
-    silhouette_scores = []
-    for k in range(2, max_clusters + 1):  
-        kmeans = KMeans(n_clusters=k, random_state=42)
-        labels = kmeans.fit_predict(data)
-        score = silhouette_score(data, labels)
-        silhouette_scores.append(score)
-    
-    return np.argmax(silhouette_scores) + 2  # Return the best k
-
-# Step 4: Perform consensus clustering on best k (max(k_x, k_y) in this case)
-def perform_consensus_clustering(data, k_final):
-
+# Perform consensus clustering and find the best number of clusters
+def perform_consensus_clustering(data, L=2, K=5, H=30, resample_proportion=0.5):
     consensus_clustering = ConsensusCluster(
         cluster=lambda n_clusters: KMeans(n_clusters=n_clusters, random_state=42),
-        L=k_final,  # Use k_final for the range of clusters
-        K=k_final,  # Fixed to k_final
-        H=30,  # Number of resampling iterations
-        resample_proportion=0.5  # Proportion of data to sample
-    ) 
+        L=L,  # Start with a smaller number of clusters
+        K=K,  # Try up to K clusters
+        H=H,  # Number of resamplings
+        resample_proportion=resample_proportion  # Proportion of data to sample
+    )
 
-    # Fit consensus clustering on the full dataset
+    # Fit consensus clustering on the dataset
     consensus_clustering.fit(data.values, verbose=True)
+
+    # Get the best number of clusters
+    best_k = consensus_clustering.bestK
+    print(f"Best number of clusters determined by consensus clustering: {best_k}")
 
     # Get final cluster labels
     final_labels = consensus_clustering.predict_data(data.values)
-    
-    return final_labels
+    return best_k, final_labels
 
-# Step 5: Apply LOCI for causal inference on clustered data
+# Apply LOCI for causal inference on clustered data
 def loci_on_clusters(data):
     directions = []  
-    scores = []      
+    scores = []     
 
     for cluster_label in np.unique(data['Cluster']):
         cluster_data = data[data['Cluster'] == cluster_label]
@@ -84,7 +70,7 @@ def loci_on_clusters(data):
 
         directions.append(inferred_direction)
 
-    # Aggregate scores
+    # Aggregate scores 
     overall_score = np.mean(scores)
 
     # Determine overall direction based on cluster directions
@@ -97,38 +83,34 @@ def loci_on_clusters(data):
 
     return final_direction, directions, overall_score
 
-
+# Save the results
 def save_results(score, inferred_direction, res_folder, cluster_directions):
     create_results_folder(res_folder)
-    results_path = os.path.join(res_folder, "loci_cc1.txt")
-    
-    # Save the aggregated direction
+    results_path = os.path.join(res_folder, "loci_cc2.txt")
+
     with open(results_path, "a", encoding="utf-8") as f:
         f.write(f"LOCI: {inferred_direction}\n")
         f.write(f"LOCI Score: {score}\n")
         f.write(f"Cluster Directions: {', '.join(cluster_directions)}\n")
         f.write("Ground Truth: X → Y\n")
-    
+
     print(f"Results saved to {results_path}")
+
 
 def main():
     # Step 1: Load data
     data = load_data(file_path)
 
-    # Step 2: Find optimal clusters for X and Y dimensions
-    k_X = find_optimal_clusters(data[['X']].values, max_clusters=4)
-    k_Y = find_optimal_clusters(data[['Y']].values, max_clusters=4)
+    # Step 2: Perform consensus clustering to determine best k and cluster data
+    best_k, final_labels = perform_consensus_clustering(data)
 
-    k_final = min(k_X, k_Y)
-    print(f"Optimal clusters: k_X={k_X}, k_Y={k_Y}, k_final={k_final}")
+    # Step 3: Add the cluster labels to the dataset
+    data['Cluster'] = final_labels
 
-    # Step 3: Perform consensus clustering
-    data['Cluster'] = perform_consensus_clustering(data, k_final)
-
-    # Step 4: Apply LOCI on clustered data
+    # Step 4: Apply LOCI on the clustered data
     final_direction, cluster_directions, overall_score = loci_on_clusters(data)
 
-    # Step 5: Save results
+    # Step 5: Save the results
     save_results(overall_score, final_direction, res_folder, cluster_directions)
 
 if __name__ == "__main__":

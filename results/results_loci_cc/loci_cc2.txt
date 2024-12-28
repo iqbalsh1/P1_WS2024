@@ -1,0 +1,157 @@
+LOCI on Consensus Clusters Approach 2
+
+Pair0005
+LOCI: Y → X
+LOCI Score: -0.0026049788136717805
+Cluster Directions: Y → X, Y → X
+Ground Truth: X → Y
+
+Pair0006
+LOCI: Undecided
+LOCI Score: -0.002128384634364834
+Cluster Directions: Y → X, X → Y
+Ground Truth: X → Y
+
+Pair0007
+LOCI: Y → X
+LOCI Score: -0.002527402108201626
+Cluster Directions: Y → X, Y → X
+Ground Truth: X → Y
+
+Pair0008
+LOCI: Y → X
+LOCI Score: -0.0028735794413057617
+Cluster Directions: Y → X, Y → X
+Ground Truth: X → Y
+
+Pair0016
+LOCI: X → Y
+LOCI Score: 0.005650884798311922
+Cluster Directions: X → Y, X → Y
+Ground Truth: X → Y
+
+Pair0017
+LOCI: X → Y
+LOCI Score: 0.002761831730380896
+Cluster Directions: X → Y, X → Y
+Ground Truth: X → Y
+
+Pair0019
+LOCI: Y → X
+LOCI Score: -0.011877318743052236
+Cluster Directions: Y → X, Y → X
+Ground Truth: X → Y
+
+Pair0033
+LOCI: Undecided
+LOCI Score: -0.0009595421930278058
+Cluster Directions: X → Y, Y → X
+Ground Truth: X → Y
+
+Pair0036
+LOCI: Y → X
+LOCI Score: -0.00023322227161531582
+Cluster Directions: Y → X, Y → X
+Ground Truth: X → Y
+
+Pair0040
+LOCI: Undecided
+LOCI Score: -0.0005193638285111392
+Cluster Directions: Y → X, X → Y
+Ground Truth: X → Y
+
+Pair0043
+LOCI: Undecided
+LOCI Score: 2.5009850735946415e-06
+Cluster Directions: X → Y, Y → X
+Ground Truth: X → Y
+
+Pair0044
+LOCI: Y → X
+LOCI Score: -6.938893903907228e-18
+Cluster Directions: Y → X, Undecided
+Ground Truth: X → Y
+
+Pair0045
+LOCI: X → Y
+LOCI Score: 2.0816681711721685e-17
+Cluster Directions: X → Y, X → Y
+Ground Truth: X → Y
+
+Pair0046
+LOCI: Undecided
+LOCI Score: 0.0005853798670338757
+Cluster Directions: X → Y, Y → X
+Ground Truth: X → Y
+
+Pair0047
+LOCI: Undecided
+LOCI Score: -0.003200928056242341
+Cluster Directions: Y → X, X → Y
+Ground Truth: Y → X
+
+Pair0065
+LOCI: Undecided
+LOCI Score: -0.00014912899874529512
+Cluster Directions: X → Y, Y → X
+Ground Truth: X → Y
+
+Pair0066
+LOCI: Undecided
+LOCI Score: 0.00029882047014296795
+Cluster Directions: Y → X, X → Y
+Ground Truth: X → Y
+
+Pair0067 
+LOCI: X → Y
+LOCI Score: 0.0005493307438612684
+Cluster Directions: X → Y, X → Y
+Ground Truth: X → Y
+
+Pair0068
+LOCI: X → Y
+LOCI Score: 0.0005493307438612684
+Cluster Directions: X → Y, X → Y
+Ground Truth: Y → X
+
+Pair0069
+LOCI: Y → X
+LOCI Score: -0.0017598763842084826
+Cluster Directions: Y → X, Y → X
+Ground Truth: Y → X
+
+Pair0070 
+LOCI: X → Y
+LOCI Score: 0.054356992371372884
+Cluster Directions: X → Y, X → Y
+Ground Truth: X → Y
+
+Pair0086 
+LOCI: Y → X
+LOCI Score: -0.004294820746208351
+Cluster Directions: Y → X, Y → X
+Ground Truth: X → Y
+
+Pair0087
+LOCI: X → Y
+LOCI Score: 0.004493154116402648
+Cluster Directions: X → Y, X → Y
+Ground Truth: X → Y
+
+Pair0094
+LOCI: Undecided
+LOCI Score: 0.001375933502322924
+Cluster Directions: Y → X, X → Y
+Ground Truth: X → Y
+
+Pair0099
+LOCI: Undecided
+LOCI Score: 0.0007961413542407216
+Cluster Directions: Y → X, X → Y
+Ground Truth: Y → X
+
+Pair0101
+LOCI: Undecided
+LOCI Score: 0.03181194530422018
+Cluster Directions: X → Y, Y → X
+Ground Truth: X → Y
