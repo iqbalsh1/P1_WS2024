@@ -1,15 +1,15 @@
 ## Results Summary
 
 ### Case: Both X and Y multimodal
+### LOCI
+- **Total Pairs:** 26
+- **LOCI on whole sets of X and Y:** 11/26 = 42.30%
+- **LOCI on GMM Clusters:** 13/26 = 50%
+- **LOCI on Consensus Clusters Approach 1:** 9/26 = 35%
+- **LOCI on Consensus Clusters Approach 2:** 7/26 = 27%
 
-- **Total Pairs:** 27
-- **LOCI on whole sets of X and Y:** 10/27 = 37.03%
-- **LOCI on GMM Clusters:** 14/27 = 52.85%
-- **LOCI on Consensus Clusters Approach 1:** 9/27 = 33.33%
-- **LOCI on Consensus Clusters Approach 2:** 
-
+### LOCI
 - **ROCHE on whole sets of X and Y:** 20/27 = 74.07%
-- **ROCHE on Consensus Clusters:** Pending
 
 
 
