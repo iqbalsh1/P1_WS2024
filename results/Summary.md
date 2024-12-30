@@ -12,8 +12,6 @@
 - **ROCHE on whole sets of X and Y:** 20/27 = 74.07%
 
 
-
-
 ### GMM Clustering 
 
 - **Initialize GMM:**:  with `n_components=2` (two clusters) 
