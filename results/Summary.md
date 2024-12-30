@@ -8,7 +8,7 @@
 - **LOCI on Consensus Clusters Approach 1:** 9/26 = 35%
 - **LOCI on Consensus Clusters Approach 2:** 7/26 = 27%
 
-### LOCI
+### ROCHE
 - **ROCHE on whole sets of X and Y:** 20/27 = 74.07%
 
 
