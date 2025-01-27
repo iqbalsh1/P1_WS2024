@@ -1,0 +1,124 @@
+Pair0022
+Inferred Causal Direction using LOCI: Y → X
+LOCI Score: -0.0007508873720785329
+Ground Truth: X → Y
+
+Pair0023
+Inferred Causal Direction using LOCI: Y → X
+LOCI Score: -0.0014642499253938956
+Ground Truth: X → Y
+
+Pair0042 
+Inferred Causal Direction using LOCI: Y → X
+LOCI Score: -0.004990692324311468
+Ground Truth: X → Y
+
+Pair0074
+Inferred Causal Direction using LOCI: X → Y
+LOCI Score: 0.019320301215123334
+Ground Truth: X → Y
+
+Pair0009
+Inferred Causal Direction using LOCI: X → Y
+LOCI Score: 0.00016668750002241833
+Ground Truth: X → Y
+
+Pair0013
+Inferred Causal Direction using LOCI: X → Y
+LOCI Score: 0.06347943498708415
+Ground Truth: X → Y
+
+Pair0014
+Inferred Causal Direction using LOCI: Y → X
+LOCI Score: -0.0017847066460431648
+Ground Truth: X → Y
+
+Pair0025
+Inferred Causal Direction using LOCI: X → Y
+LOCI Score: 0.009262224517092355
+Ground Truth: X → Y
+
+Pair0026
+Inferred Causal Direction using LOCI: Y → X
+LOCI Score: -0.0022555894753078323
+Ground Truth: X → Y
+
+Pair0027
+Inferred Causal Direction using LOCI: Y → X
+LOCI Score: -0.003439697700482764
+Ground Truth: X → Y
+
+Pair0028
+Inferred Causal Direction using LOCI: X → Y
+LOCI Score: 0.005629854960965293
+Ground Truth: X → Y
+
+Pair0032 
+Inferred Causal Direction using LOCI: Y → X
+LOCI Score: -0.00231696292052867
+Ground Truth: X → Y
+
+Pair0034
+Inferred Causal Direction using LOCI: Y → X
+LOCI Score: -0.001054407993289365
+Ground Truth: X → Y
+
+Pair0035
+Inferred Causal Direction using LOCI: X → Y
+LOCI Score: 0.003195365756789268
+Ground Truth: X → Y
+
+Pair0038
+Inferred Causal Direction using LOCI: Y → X
+LOCI Score: -0.000770243290128654
+Ground Truth: X → Y
+
+Pair0039 
+Inferred Causal Direction using LOCI: Y → X
+LOCI Score: -0.0009156605435498867
+Ground Truth: X → Y
+
+Pair0041 
+Inferred Causal Direction using LOCI: Y → X
+LOCI Score: -0.003908704850906225
+Ground Truth: X → Y
+
+Pair0077
+Inferred Causal Direction using LOCI: Y → X
+LOCI Score: -0.029483823739231432
+Ground Truth: X → Y
+
+Pair0085 
+Inferred Causal Direction using LOCI: X → Y
+LOCI Score: 7.90095099280348e-05
+Ground Truth: X → Y
+
+Pair0091 
+Inferred Causal Direction using LOCI: Y → X
+LOCI Score: -0.006317734981413466
+Ground Truth: X → Y
+
+Pair0095
+Inferred Causal Direction using LOCI: Y → X
+LOCI Score: -0.0057756700853600195
+Ground Truth: X → Y
+
+Pair0096
+Inferred Causal Direction using LOCI: Y → X
+LOCI Score: -0.016286884949525928
+Ground Truth: X → Y
+
+Pair0097 
+Inferred Causal Direction using LOCI: X → Y
+LOCI Score: 0.00036846703947997043
+Ground Truth: X → Y
+
+Pair0098
+Inferred Causal Direction using LOCI: Y → X
+LOCI Score: -0.004580565599276873
+Ground Truth: X → Y
+
+Pair0100
+Inferred Causal Direction using LOCI: Y → X
+LOCI Score: -0.00012447230370732105
+Ground Truth: X → Y
