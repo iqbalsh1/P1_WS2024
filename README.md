@@ -7,7 +7,7 @@ This repository focuses on testing the modality of each data pair from the causa
 ## Overview
 We aim to analyze modality and applies clustering methods to perform causal inference methods to infere causal directions using LOCI and ROCHE.
 
-## Steps Performed
+## Steps
 1. **Modality Testing**:
    - Tested all pairs for modality.
    - Found cases where:
