@@ -2,7 +2,7 @@
 
 This repository focuses on testing the modality of each data pair from the causal effect database and indetifying the causal pair are **unimodal or multimodal**. The dataset can be found [here](https://webdav.tuebingen.mpg.de/cause-effect/).
 
-# Modality and Clustering Analysis for Causal Inference
+# Modality and Clustering Analysis 
 
 ## Overview
 We aim to analyze modality and applies clustering methods to perform causal inference methods to infere causal directions using LOCI and ROCHE.
