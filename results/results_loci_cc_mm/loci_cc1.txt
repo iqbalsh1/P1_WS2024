@@ -1,4 +1,4 @@
-LOCI on Consensus Clusters Approach-1: max(k_x,k_y)
+LOCI - Consensus Clusters Approach-1 with max(k_x,k_y)
 
 Pair0005
 LOCI: Y → X
