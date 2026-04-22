@@ -1,7 +1,7 @@
 # Practical Examination of Causal Pair Databases
 
-This repository focuses on testing the modality of each data pair from the causal effect database and indetifying the causal pair are **unimodal or multimodal**. The dataset can be found [here](https://webdav.tuebingen.mpg.de/cause-effect/).
-- Paper Link : [here](https://jmlr.org/papers/v17/14-518.html).
+This repository focuses on testing the modality of each data pair from the causal effect database and indetifying the causal pair are **unimodal or multimodal**.  [Dataset](https://webdav.tuebingen.mpg.de/cause-effect/)  
+[Paper](https://jmlr.org/papers/v17/14-518.html)  
 
 # Modality and Clustering Analysis 
 
